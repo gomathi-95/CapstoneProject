@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite">
+  <test thread-count="5" name="Testing on chrome">
+	<parameter name = "browser" value = "chrome"></parameter>
+    <classes>
+      <class name="package_capstone.Class3"/>
+      <class name="package_capstone.Class4"/>
+      <class name="package_capstone.BugValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Testing on firefox">
+	<parameter name = "browser" value = "firefox"></parameter>
+    <classes>
+      <class name="package_capstone.Class3"/>
+      <class name="package_capstone.Class4"/>
+      <class name="package_capstone.BugValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Testing on edge">
+	<parameter name = "browser" value = "edge"></parameter>
+    <classes>
+      <class name="package_capstone.Class3"/>
+      <class name="package_capstone.Class4"/>
+      <class name="package_capstone.BugValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- SmokeSuite -->
